@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let limit = +prompt ('nhập số lớn nhất trong khoảng bạn muốn');
+  let randum = Math.floor(Math.random() + limit);
+  let doan;
+  let doanne = 0;
+  let a = false;
+  while (a == false) {
+      doan = +prompt ('số m đoán là');
+      if (doan > randum) {
+          alert ('số m đoán lớn hơn');
+      }
+      if (doan < randum) {
+          alert ('số m đoán nhỏ hơn');
+      }
+      if (doan == randum) {
+          alert ('m đoán đúng');
+      }
+      doanne++;
+      if (doanne == 3) {
+          alert('m hết lượt chơi');
+          break;
+      }
+  }
+</script>
+</body>
+</html>
